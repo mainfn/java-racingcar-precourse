@@ -24,7 +24,7 @@ public class Car {
     positionsByRound.add(nextPosition);
   }
 
-  private Integer getLastPosition() {
+  public Integer getLastPosition() {
     if (positionsByRound.isEmpty()) {
       return 0;
     }
