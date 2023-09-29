@@ -2,7 +2,7 @@ package racingcar.util;
 
 import camp.nextstep.edu.missionutils.Randoms;
 
-public final class RandomNumberGenerator {
+public final class RandomNumberGenerator implements NumberGenerator {
 
   private final int startInclusive;
   private final int endInclusive;
