@@ -29,6 +29,7 @@ public final class InputView {
   }
 
   public int inputMaxRacingRound() {
+    outputView.printInputAttemptCount();
     final String input = readLine();
     inputValidator.validateMaxRacingRoundInput(input);
 

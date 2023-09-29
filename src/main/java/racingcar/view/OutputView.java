@@ -1,5 +1,8 @@
 package racingcar.view;
 
+import racingcar.domain.racing.CompletedRoundRecords;
+import racingcar.domain.racing.PlayingRoundRecord;
+
 public final class OutputView {
 
   public void printInputCarNamesMessage() {
@@ -8,5 +11,15 @@ public final class OutputView {
 
   public void printInputAttemptCount() {
     System.out.println("시도할 회수는 몇회인가요?");
+  }
+
+  public void printGameWinners(final CompletedRoundRecords completedRoundRecords) {
+    System.out.println(completedRoundRecords);
+  }
+
+  public void printRoundResult(final PlayingRoundRecord playingRoundRecord) {
+    System.out.println("실행 결과");
+    System.out.println(playingRoundRecord);
+    System.out.println();
   }
 }
