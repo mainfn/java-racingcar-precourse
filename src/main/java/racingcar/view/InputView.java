@@ -28,6 +28,13 @@ public final class InputView {
         .collect(Collectors.toList());
   }
 
+  public int inputMaxRacingRound() {
+    final String input = readLine();
+    inputValidator.validateMaxRacingRoundInput(input);
+
+    return Integer.parseInt(input);
+  }
+
   private String readLine() {
     return Console.readLine().trim();
   }

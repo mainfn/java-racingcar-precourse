@@ -12,5 +12,12 @@ public final class InputValidator {
     }
   }
 
+  public void validateMaxRacingRoundInput(final String input) {
+    try {
+      Integer.parseInt(input);
+    } catch (final NumberFormatException e) {
+      throw new IllegalArgumentException("시도 횟수는 숫자여야 한다.");
+    }
+  }
 
 }
