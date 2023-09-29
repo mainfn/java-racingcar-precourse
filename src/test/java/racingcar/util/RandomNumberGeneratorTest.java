@@ -11,7 +11,7 @@ class RandomNumberGeneratorTest {
     // given
     final int startInclusive = 0;
     final int endInclusive = 100;
-    final RandomNumberGenerator randomNumberGenerator = new RandomNumberGenerator(startInclusive,
+    final NumberGenerator randomNumberGenerator = new RandomNumberGenerator(startInclusive,
         endInclusive);
 
     // when
