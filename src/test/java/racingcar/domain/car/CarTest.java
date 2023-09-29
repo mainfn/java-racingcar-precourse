@@ -26,7 +26,7 @@ class CarTest {
   }
 
 
-  @DisplayName("차 이름이 빈 문자열이거나 null인 경우 예외 발생")
+  @DisplayName("차 생성 시, 이름이 빈 문자열이거나 null인 경우 예외 발생")
   @Test
   void carNameMustNotBeNull() {
     // given
